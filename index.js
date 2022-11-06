@@ -1,7 +1,7 @@
 require("dotenv").config()
-const { Client, Events, GatewayIntentBits } = require(~discord.js~)
+const { Client, Events, GatewayIntentBits } = require("discord.js")
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds] })
 
 // When the client is ready, run this code (only once)
 client.once(Events.ClientReady, c => {
